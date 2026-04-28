@@ -1,0 +1,3 @@
+**Question 1:** The bug was that the function doesn't check for numerical arguments only. Because of this, we are able to pass two strings and the `+` operator would cause string concatenation. So we get "2" + "3" = "23" and the type of result is string. 
+
+**Question 2:** To fix this bug, we simply just add a check to ensure we are only summing two numbers and no other types or objects are involved. See screenshot for the specific fix.
